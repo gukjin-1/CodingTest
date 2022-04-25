@@ -12,3 +12,11 @@ for _ in range(t):
       cnt += max-b[i]
 
   print(cnt)
+  #==================================
+n,m = map(int,input().split())
+num = list(map(int,input().split()))
+
+for i in range(m):
+  num.sort()
+  num[0] = num[1] = num[0]+num[1]
+print(sum(num))
